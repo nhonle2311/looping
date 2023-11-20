@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let n1 = 0, n2 = 1 , nex_num,sumFibonacci = 0 ;
+        document.write('Fibonacci Series:')
+        for (let i = 0; i < 30; i++) {
+            document.write(`<br>${n1}`)
+            if ( n1 % 7 === 0 && n1 !== 0 ){
+                sumFibonacci += n1;
+                document.write(' là các số chia hết cho 7')
+            }
+            nex_num = n1 + n2;
+            n1 = n2;
+            n2 = nex_num;
+        }
+        document.write(`<br>tổng các số chia hết cho 7: ${sumFibonacci}`);
+
+    </script>
+</body>
+</html>
